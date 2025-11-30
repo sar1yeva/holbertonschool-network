@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # File: 4-TCP_and_UDP_ports
 # Description: Display listening TCP/UDP sockets with PID/Program name
 
