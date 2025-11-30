@@ -1,0 +1,11 @@
+#!/bin/bash
+# File: 4-TCP_and_UDP_ports
+# Description: Display listening TCP/UDP sockets with PID/Program name
+
+echo "Active Internet connections (only servers)"
+# List only listening TCP/UDP sockets with PID/program
+sudo ss -tulnp
+
+echo "Active UNIX domain sockets (only servers)"
+# List only listening UNIX domain sockets with PID/program
+sudo ss -xlnp
