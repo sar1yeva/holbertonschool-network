@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Script to configure host resolution on an Ubuntu server
+
+# Backup existing /etc/hosts
+cp /etc/hosts /etc/hosts.bak
+
+# Overwrite /etc/hosts with new configuration
+cat <<EOF >/etc/hosts
+127.0.0.1       localhost
+127.0.0.2       localhost
+8.8.8.8         facebook.com
+::1             localhost
+EOF
+
+echo "Hosts file updated successfully."
